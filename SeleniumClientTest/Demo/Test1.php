@@ -69,6 +69,7 @@ class AlertTest extends PHPUnit_Framework_TestCase
 		$el->click();
 
 		$el = $d->waitForElementUntilIsNotPresent(By::xPath("//div[@id='sbox-content']/iframe"));
+		
 		$d->findElement(By::xPath("//a[contains(@onclick, 'item.save')]"))->click();
 
 
